@@ -89,17 +89,43 @@
     try { window.localStorage.setItem(key, value); } catch (e) { /* хранилище недоступно */ }
   }
 
+  var setCookieShift = function (on) {
+    if (on && cookie) {
+      root.style.setProperty('--cookie-h', (cookie.offsetHeight + 12) + 'px');
+    } else {
+      root.style.removeProperty('--cookie-h');
+    }
+  };
+
   if (cookie && !storageGet(COOKIE_KEY)) {
-    setTimeout(function () {
+    // Показываем плашку, когда человек уже начал листать, — первый экран и его кнопки не закрываем
+    var cookieShown = false;
+    var showCookie = function () {
+      if (cookieShown) return;
+      cookieShown = true;
+      window.removeEventListener('scroll', onFirstScroll);
       cookie.hidden = false;
       requestAnimationFrame(function () {
-        requestAnimationFrame(function () { cookie.classList.add('is-visible'); });
+        requestAnimationFrame(function () {
+          cookie.classList.add('is-visible');
+          setCookieShift(true);
+        });
       });
-    }, 2600);
+    };
+    var onFirstScroll = function () {
+      if (window.scrollY > window.innerHeight * 0.5) setTimeout(showCookie, 400);
+    };
+    window.addEventListener('scroll', onFirstScroll, { passive: true });
+    setTimeout(showCookie, 20000); // если не листают — покажем позже
+
+    window.addEventListener('resize', function () {
+      if (!cookie.hidden) setCookieShift(true);
+    });
 
     cookie.querySelector('[data-cookie-accept]').addEventListener('click', function () {
       storageSet(COOKIE_KEY, '1');
       cookie.classList.remove('is-visible');
+      setCookieShift(false);
       setTimeout(function () { cookie.hidden = true; }, 700);
     });
   }
