@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Шаблон сайта — каталог Сайтики</title>
+  <meta name="description" content="Живая демоверсия готового сайта из каталога Сайтики. Адаптируем шаблон под ваш бизнес.">
+  <meta name="theme-color" content="#eaf1f8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Шаблон сайта — каталог Сайтики">
+  <meta property="og:description" content="Красивый, быстрый и удобный сайт для ваших клиентов. Без сложных технических вопросов и лишних расходов.">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/lora-var.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-400.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function (d) {
+      d.classList.add('js');
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('is-intro');
+    })(document.documentElement);
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+
+  <!-- Вступительная анимация (только главная) -->
+  <div class="intro" data-intro aria-hidden="true">
+    <div class="intro__panel"></div>
+    <div class="intro__panel"></div>
+    <div class="intro__panel"></div>
+    <div class="intro__panel"></div>
+    <div class="intro__content">
+      <div class="intro__logo">
+        <i></i><i></i><i></i>
+      </div>
+      <p class="intro__word"><span>Сайтика</span></p>
+      <p class="intro__status"><span data-intro-status>Собираем структуру</span></p>
+      <p class="intro__count"><span data-intro-count>0</span>%</p>
+      <div class="intro__bar"><i data-intro-bar></i></div>
+    </div>
+  </div>
+
+  <!-- ===================== ШАПКА ===================== -->
+  <header class="header" data-header>
+    <div class="wrap header__bar">
+      <a class="logo" href="index.html" aria-label="Сайтика — на главную">
+        <svg class="logo__mark" viewBox="0 0 30 30" aria-hidden="true">
+          <rect x="1" y="1" width="28" height="28" rx="8" fill="#132039"/>
+          <rect x="7" y="8" width="10" height="3" rx="1.5" fill="#ff6a2b"/>
+          <rect x="7" y="14" width="16" height="3" rx="1.5" fill="#a8d2f4"/>
+          <rect x="7" y="20" width="7" height="3" rx="1.5" fill="#ffffff"/>
+        </svg>
+        Сайтика
+      </a>
+      <nav class="nav" aria-label="Основное меню">
+        <a href="index.html#formats">Услуги</a>
+        <a href="index.html#prices">Цены</a>
+        <a href="index.html#projects">Работы</a>
+        <a href="index.html#faq">Вопросы</a>
+      </nav>
+      <div class="header__actions">
+        <a class="btn btn--ghost" href="catalog.html">Каталог</a>
+        <a class="btn btn--signal" href="#request">Заказать сайт</a>
+      </div>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu" data-burger>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-menu>
+    <nav aria-label="Мобильное меню">
+      <a href="index.html#formats" style="--i:0">Услуги</a>
+      <a href="index.html#prices" style="--i:1">Цены</a>
+      <a href="index.html#projects" style="--i:2">Работы</a>
+      <a href="catalog.html" style="--i:3">Каталог</a>
+      <a href="index.html#faq" style="--i:4">Вопросы</a>
+    </nav>
+    <a class="btn btn--signal btn--block" href="index.html#contacts">Заказать сайт</a>
+  </div>
+
+  <main id="main" class="tp" data-tp>
+
+    <!-- ===================== ПЕРВЫЙ ЭКРАН ===================== -->
+    <section class="hero tp-hero" id="top">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="hero__spot" aria-hidden="true"></div>
+      <div class="hero__decor" aria-hidden="true">
+        <span class="deco deco--ring" data-depth="1.6" data-parallax="-0.25"></span>
+        <span class="deco deco--plus" data-depth="2.4" data-parallax="-0.4"></span>
+        <span class="deco deco--dot" data-depth="3" data-parallax="-0.55"></span>
+        <span class="deco deco--square" data-depth="2" data-parallax="-0.35"></span>
+      </div>
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Навигационная цепочка" data-reveal>
+          <ol role="list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><span aria-current="page" data-f="title">Шаблон</span></li>
+          </ol>
+        </nav>
+
+        <div class="tp-hero__head">
+          <h1 class="hero__title tp-hero__title" data-split data-f-h1>
+            <span class="line"><span>Шаблон</span></span>
+            <span class="line"><span>сайта</span></span>
+          </h1>
+          <aside class="tp-hero__aside" data-reveal style="--d:3">
+            <p class="tp-tags"><span class="tp-tag" data-f="categoryName"></span><span class="tp-tag tp-tag--style" data-f="styleName"></span></p>
+            <p class="tp-hero__desc" data-f="desc"></p>
+            <div class="tp-hero__buy">
+              <p class="tp-price"><b><span data-f="price"></span>&nbsp;₽</b><span>Стандартная настройка в существующей структуре.</span></p>
+              <a class="btn btn--signal" href="#request">Хочу такой сайт</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ПРОСМОТР НА УСТРОЙСТВАХ ===================== -->
+    <section class="viewer" id="demo" data-viewer>
+      <div class="wrap">
+        <div class="viewer__bar" data-reveal>
+          <div class="viewer__tabs" role="tablist" aria-label="Устройство для просмотра">
+            <button class="viewer__tab" type="button" role="tab" aria-selected="true" data-device-btn="desktop">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></svg>Монитор
+            </button>
+            <button class="viewer__tab" type="button" role="tab" aria-selected="false" data-device-btn="laptop">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="10" rx="1.5"/><path d="M2.5 18.5h19"/></svg>Ноутбук
+            </button>
+            <button class="viewer__tab" type="button" role="tab" aria-selected="false" data-device-btn="phone">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>Смартфон
+            </button>
+            <span class="viewer__pill" aria-hidden="true"></span>
+          </div>
+          <div class="viewer__tools">
+            <button class="viewer__icon" type="button" aria-label="Перезагрузить предпросмотр" data-reload>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v4h-4"/></svg>
+            </button>
+            <button class="viewer__expand" type="button" data-expand>
+              <span data-expand-label>Развернуть</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="viewer__stage" data-stage-view>
+          <div class="device" data-device="desktop" data-cursor="Листайте">
+            <div class="device__body">
+              <div class="device__screen" data-screen>
+                <div class="device__loader" data-loader>
+                  <span class="device__spinner" aria-hidden="true"></span>
+                  <span>Загружаем демо</span>
+                </div>
+                <iframe data-frame title="Интерактивное демо" sandbox="allow-scripts allow-same-origin" referrerpolicy="no-referrer" loading="lazy"></iframe>
+              </div>
+            </div>
+            <div class="device__stand" aria-hidden="true"></div>
+            <div class="device__base" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="viewer__foot" data-reveal>
+          <p class="viewer__hint"><span class="viewer__dot" aria-hidden="true"></span>Листайте сайт прямо внутри устройства</p>
+          <a class="link viewer__open" href="#" target="_blank" rel="noopener" data-demo-link>Открыть сайт в новой вкладке</a>
+          <div class="viewer__help">
+            <button class="viewer__help-btn" type="button" aria-expanded="false" aria-controls="viewer-help" data-help>Не видно сайт?</button>
+            <div class="viewer__pop" id="viewer-help" role="region" aria-label="Если сайт не отображается" hidden>
+              <p>Браузер или сайт могут ограничивать встроенный просмотр. Из-за ограничений доступа мы не можем проверить содержимое чужого сайта из этого окна. Попробуйте перезагрузить демо или открыть его отдельно.</p>
+              <div class="viewer__pop-actions">
+                <button class="btn btn--ghost" type="button" data-reload>Перезагрузить</button>
+                <a class="btn btn--signal" href="#" target="_blank" rel="noopener" data-demo-link>Открыть отдельно</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="viewer__notice" data-reveal>Демонстрация дизайна. Не вводите личные данные и не оформляйте запись.</p>
+      </div>
+    </section>
+
+    <!-- ===================== О ШАБЛОНЕ ===================== -->
+    <section class="section tp-about">
+      <div class="wrap tp-about__grid">
+        <div class="tp-about__copy">
+          <h2 data-split><span class="line"><span>О шаблоне <span data-f="title"></span></span></span></h2>
+          <p class="tp-about__text" data-reveal data-f="about"></p>
+          <h3 class="tp-about__sub" data-reveal>Что можно рассмотреть в демо</h3>
+          <ul class="tp-look" role="list" data-list="demoList"></ul>
+          <p class="tp-about__note" data-reveal>Демо показывает оформление сайта. Отправка форм, запись, оплата и сторонние интеграции не входят в подтверждённые возможности шаблона.</p>
+        </div>
+        <div class="tp-about__visual" data-reveal style="--d:1">
+          <div class="tp-shot" data-tilt data-cursor="Демо">
+            <span class="tpl__bar"><i></i><i></i><i></i><span data-f="host"></span></span>
+            <span class="tp-shot__img"><img data-f-img alt="" width="1008" height="672" loading="lazy" decoding="async"></span>
+          </div>
+          <span class="tp-shot__badge"><b><span data-f="price"></span>&nbsp;₽</b>под ключ<br>в вашем стиле</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== НАСТРОЙКА ===================== -->
+    <section class="section setup tp-setup">
+      <div class="wrap setup__grid">
+        <div class="setup__intro">
+          <h2 data-split>
+            <span class="line"><span>Настроим этот сайт</span></span>
+            <span class="line"><span>под ваш бизнес</span></span>
+          </h2>
+          <p data-reveal>Вы выбираете понравившийся дизайн, а мы заменяем тексты, фотографии и логотип на ваши. В результате вы получаете сайт с собственным оформлением и содержанием без необходимости разрабатывать его с нуля.</p>
+          <p data-reveal>Структура и состав страниц сохраняются.</p>
+          <div class="setup__actions" data-reveal>
+            <a class="btn btn--signal" href="#request">Хочу такой сайт</a>
+          </div>
+        </div>
+        <div class="setup__lists">
+          <div class="setup__card setup__card--in checklist" data-checklist data-reveal>
+            <h3>Что входит в стандартную настройку</h3>
+            <ul role="list">
+              <li style="--i:0"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Замена логотипа.</li>
+              <li style="--i:1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Замена существующих текстов.</li>
+              <li style="--i:2"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Замена изображений.</li>
+              <li style="--i:3"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Подстановка контактной информации.</li>
+              <li style="--i:4"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Настройка существующих контактных ссылок, если она предусмотрена шаблоном.</li>
+              <li style="--i:5"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Проверка сайта после внесённых изменений.</li>
+              <li style="--i:6"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Подготовка файлов для передачи.</li>
+            </ul>
+          </div>
+          <div class="setup__card setup__card--out" data-reveal style="--d:1">
+            <h3>Что оплачивается отдельно</h3>
+            <ul role="list">
+              <li><span class="plus" aria-hidden="true"></span>Добавление новых секций.</li>
+              <li><span class="plus" aria-hidden="true"></span>Изменение структуры сайта.</li>
+              <li><span class="plus" aria-hidden="true"></span>Создание новых страниц.</li>
+              <li><span class="plus" aria-hidden="true"></span>Разработка новой функциональности.</li>
+              <li><span class="plus" aria-hidden="true"></span>Интеграция сторонних сервисов.</li>
+              <li><span class="plus" aria-hidden="true"></span>Размещение сайта на хостинге клиента.</li>
+              <li><span class="plus" aria-hidden="true"></span>Домен и услуги хостинга.</li>
+              <li><span class="plus" aria-hidden="true"></span>Последующие доработки, не включённые в согласованный объём.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap tp-change">
+        <h3 class="tp-change__title" data-reveal>Что можно изменить</h3>
+        <ul class="tp-change__list" role="list" data-list="change"></ul>
+        <p class="tp-change__note" data-reveal>Изменения дизайна, структуры и новые функции согласуем отдельно. Сначала зафиксируем состав работ и итоговую стоимость.</p>
+      </div>
+    </section>
+
+    <!-- ===================== ОТ ВЫБОРА ДО ПЕРЕДАЧИ ===================== -->
+    <section class="journey" data-journey>
+      <div class="journey__sticky">
+        <div class="wrap journey__head">
+          <h2 data-split><span class="line"><span>От выбора до передачи</span></span></h2>
+          <p data-reveal>Срок зависит от готовности материалов и объёма работ. Подтвердим его после согласования задачи и оплаты.</p>
+        </div>
+        <div class="journey__viewport">
+          <ol class="journey__track" role="list" data-journey-track>
+            <li class="jstep" style="--i:0"><span class="jstep__num">1</span><p>Вы выбираете шаблон.</p></li>
+            <li class="jstep" style="--i:1"><span class="jstep__num">2</span><p>Отправляете заявку.</p></li>
+            <li class="jstep" style="--i:2"><span class="jstep__num">3</span><p>Менеджер связывается с вами.</p></li>
+            <li class="jstep" style="--i:3"><span class="jstep__num">4</span><p>Согласовываем материалы, цену и сроки.</p></li>
+            <li class="jstep" style="--i:4"><span class="jstep__num">5</span><p>Вы вносите предоплату.</p></li>
+            <li class="jstep" style="--i:5"><span class="jstep__num">6</span><p>Адаптируем шаблон.</p></li>
+            <li class="jstep" style="--i:6"><span class="jstep__num">7</span><p>Вы получаете ссылку для просмотра.</p></li>
+            <li class="jstep" style="--i:7"><span class="jstep__num">8</span><p>Вносим один согласованный пакет правок.</p></li>
+            <li class="jstep" style="--i:8"><span class="jstep__num">9</span><p>После приёмки вы оплачиваете остаток.</p></li>
+            <li class="jstep" style="--i:9"><span class="jstep__num">10</span><p>Передаём сайт или размещаем на хостинге за отдельную плату.</p></li>
+          </ol>
+        </div>
+        <div class="wrap"><div class="journey__progress" aria-hidden="true"><i data-journey-bar></i></div></div>
+      </div>
+    </section>
+
+    <!-- ===================== ВОПРОСЫ ===================== -->
+    <section class="section faq tp-faq" id="faq">
+      <div class="wrap faq__grid">
+        <div class="faq__side">
+          <h2 data-split><span class="line"><span>Вопросы о <span data-f="title"></span></span></span></h2>
+          <p data-reveal>Не нашли ответ — напишите в заявке, менеджер подскажет.</p>
+          <a class="btn btn--ghost" href="#request" data-reveal>Задать вопрос</a>
+        </div>
+        <div class="faq__list" data-faq></div>
+      </div>
+    </section>
+
+    <!-- ===================== ЕЩЁ ШАБЛОНЫ ===================== -->
+    <section class="section tp-more">
+      <div class="wrap">
+        <div class="templates__head">
+          <h2 data-split><span class="line"><span>Ещё готовые сайты</span></span></h2>
+          <a class="btn btn--ghost" href="catalog.html#templates" data-reveal>Весь каталог</a>
+        </div>
+        <div class="tpl-grid tp-more__grid" data-related></div>
+      </div>
+    </section>
+
+    <!-- ===================== ЗАЯВКА ===================== -->
+    <section class="section contact tp-request" id="request">
+      <div class="wrap contact__grid">
+        <div class="contact__copy">
+          <h2 data-split><span class="line"><span>Хочу такой сайт</span></span></h2>
+          <p data-reveal>Оставьте контакты. Менеджер уточнит материалы, согласует стоимость и сроки перед началом работы.</p>
+          <div class="tp-pick" data-reveal>
+            <span class="tp-pick__img"><img data-f-img alt="" width="1008" height="672" loading="lazy" decoding="async"></span>
+            <div class="tp-pick__info">
+              <p class="tp-pick__name" data-f="title"></p>
+              <p class="tp-pick__cat" data-f="categoryName"></p>
+              <p class="tp-pick__price"><b><span data-f="price"></span>&nbsp;₽</b></p>
+            </div>
+            <p class="tp-pick__note">Для типовых проектов. Срок подтверждаем после согласования задачи, материалов и оплаты.</p>
+          </div>
+        </div>
+
+        <!--
+          ФОРМА ЗАЯВКИ НА ШАБЛОН
+          Данные сейчас никуда не отправляются (см. assets/js/lead-form.js → sendLead()).
+          Скрытые поля template, template_demo и price заполняются автоматически.
+        -->
+        <form class="lead" data-lead data-endpoint="" novalidate>
+          <div class="lead__inner">
+            <input type="hidden" name="template" value="" data-v="title">
+            <input type="hidden" name="template_slug" value="" data-v="slug">
+            <input type="hidden" name="template_demo" value="" data-v="demo">
+            <input type="hidden" name="price" value="" data-v="price">
+
+            <div class="field">
+              <label for="tp-name">Ваше имя <span class="field__opt">необязательно</span></label>
+              <input id="tp-name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться">
+            </div>
+
+            <div class="field">
+              <label for="tp-phone">Ваш телефон <span aria-hidden="true">*</span></label>
+              <input id="tp-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (999) 123-45-67" required aria-describedby="tp-phone-error">
+              <span class="field__error" id="tp-phone-error" role="alert"></span>
+            </div>
+
+            <fieldset class="lead__group">
+              <legend>Как удобнее связаться?</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="channel" value="Telegram" checked><span>Telegram</span></label>
+                <label class="chip"><input type="radio" name="channel" value="MAX"><span>MAX</span></label>
+                <label class="chip"><input type="radio" name="channel" value="Телефонный звонок"><span>Телефонный звонок</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="tp-comment">Комментарий <span class="field__opt">необязательно</span></label>
+              <textarea id="tp-comment" name="comment" rows="3" placeholder="Что хотите изменить или уточнить"></textarea>
+            </div>
+
+            <div class="lead__trap" aria-hidden="true">
+              <label for="tp-website">Ваш сайт</label>
+              <input id="tp-website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="tp-summary">
+              <span>Адаптация «<span data-f="title"></span>»</span>
+              <a href="#" target="_blank" rel="noopener" data-demo-link>Демо выбранного шаблона</a>
+              <b><span data-f="price"></span>&nbsp;₽</b>
+            </div>
+
+            <label class="check">
+              <input type="checkbox" name="consent" required>
+              <span class="check__box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+              <span>Даю согласие на обработку персональных данных. <a href="privacy.html">Политика конфиденциальности</a></span>
+            </label>
+            <span class="field__error" role="alert" data-consent-error></span>
+
+            <button class="btn btn--signal btn--block lead__submit" type="submit">Отправить заявку</button>
+          </div>
+
+          <div class="lead__done" tabindex="-1" aria-live="polite">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29"/><path d="M19 33l9 9 17-19"/></svg>
+            <h3>Заявка отправлена</h3>
+            <p>Менеджер свяжется с вами и уточнит материалы по шаблону.</p>
+            <button class="link" type="button" data-lead-reset>Отправить ещё одну</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Шаблон не найден -->
+    <section class="section tp-missing" data-missing hidden>
+      <div class="wrap">
+        <h1>Такого шаблона нет в каталоге</h1>
+        <p>Возможно, ссылка устарела. Посмотрите все готовые сайты — там точно найдётся подходящий.</p>
+        <a class="btn btn--signal" href="catalog.html#templates">Открыть каталог</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Панель покупки -->
+  <div class="buybar" data-buybar aria-hidden="true">
+    <span class="buybar__img"><img data-f-img alt="" width="1008" height="672" loading="lazy" decoding="async"></span>
+    <p class="buybar__info"><b data-f="title"></b><span><span data-f="price"></span>&nbsp;₽, стандартная настройка</span></p>
+    <a class="btn btn--signal" href="#request" tabindex="-1">Хочу такой сайт</a>
+  </div>
+
+  <!-- ===================== ПОДВАЛ ===================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <p class="footer__slogan">Сайты для небольших дел <span>и больших планов.</span></p>
+        <ul class="footer__links" role="list">
+          <li><a href="catalog.html">Каталог сайтов</a></li>
+          <li><a href="index.html#formats">Услуги студии</a></li>
+          <li><a href="index.html#prices">Цены и условия</a></li>
+          <li><a href="index.html#projects">Портфолио</a></li>
+          <li><a href="index.html#faq">Вопросы и ответы</a></li>
+          <li><a href="privacy.html">Конфиденциальность</a></li>
+        </ul>
+      </div>
+      <div class="footer__word" aria-hidden="true" data-parallax-x="0.25">Сайтика</div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Сайтика</span>
+        <a href="privacy.html#cookie">Использование cookie</a>
+        <button class="to-top" type="button" data-to-top>Наверх
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie -->
+  <div class="cookie" data-cookie role="dialog" aria-live="polite" aria-label="Уведомление об использовании cookie" hidden>
+    <p class="cookie__title">Мы используем cookie</p>
+    <p>Они помогают сайту работать и показывают, какие страницы полезны. Продолжая пользоваться сайтом, вы соглашаетесь с <a href="privacy.html#cookie">политикой конфиденциальности</a>.</p>
+    <div class="cookie__row">
+      <button class="btn btn--signal" type="button" data-cookie-accept>Хорошо</button>
+      <a class="btn btn--ghost" href="privacy.html#cookie">Подробнее</a>
+    </div>
+  </div>
+
+  <script src="assets/js/templates-data.js" defer></script>
+  <script src="assets/js/template.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/effects.js" defer></script>
+  <script src="assets/js/lead-form.js" defer></script>
+</body>
+</html>
