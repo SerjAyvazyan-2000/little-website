@@ -238,7 +238,7 @@
   var decor = Array.prototype.slice.call(document.querySelectorAll('.deco[data-depth]')).map(function (el) {
     return { el: el, depth: Number(el.getAttribute('data-depth')) || 1, x: 0, y: 0 };
   });
-  var frame = document.querySelector('[data-tilt-scene] .stage__frame');
+  var frame = document.querySelector('[data-tilt-target]');
   var scene = { rx: 0, ry: 0 };
   var heroVisible = true;
 

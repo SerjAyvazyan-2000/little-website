@@ -14,8 +14,6 @@
     var y = window.scrollY;
     if (header) {
       header.classList.toggle('is-scrolled', y > 10);
-      var goingDown = y > lastY && y > 600;
-      header.classList.toggle('is-hidden', goingDown && !body.classList.contains('menu-open'));
     }
     lastY = y;
   }

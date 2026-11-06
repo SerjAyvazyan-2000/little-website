@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Готовые сайты для бизнеса — каталог шаблонов Сайтики, от 2 000 ₽</title>
+  <meta name="description" content="Каталог готовых сайтов для бизнеса: красота и здоровье, автосервисы, строительство, фитнес, сервисы. Адаптируем выбранный дизайн под вас от 2 000 ₽.">
+  <meta name="theme-color" content="#eaf1f8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Готовые сайты для вашего бизнеса — каталог Сайтики">
+  <meta property="og:description" content="Выберите дизайн, а мы заменим тексты, фотографии и логотип. От 2 000 ₽.">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/lora-var.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-400.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/images/catalog/mirelle.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function (d) {
+      d.classList.add('js');
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('is-intro');
+    })(document.documentElement);
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+
+  <!-- Вступительная анимация (только главная) -->
+  <div class="intro" data-intro aria-hidden="true">
+    <div class="intro__panel"></div>
+    <div class="intro__panel"></div>
+    <div class="intro__panel"></div>
+    <div class="intro__panel"></div>
+    <div class="intro__content">
+      <div class="intro__logo">
+        <i></i><i></i><i></i>
+      </div>
+      <p class="intro__word"><span>Сайтика</span></p>
+      <p class="intro__status"><span data-intro-status>Собираем структуру</span></p>
+      <p class="intro__count"><span data-intro-count>0</span>%</p>
+      <div class="intro__bar"><i data-intro-bar></i></div>
+    </div>
+  </div>
+
+  <!-- ===================== ШАПКА ===================== -->
+  <header class="header" data-header>
+    <div class="wrap header__bar">
+      <a class="logo" href="index.html" aria-label="Сайтика — на главную">
+        <svg class="logo__mark" viewBox="0 0 30 30" aria-hidden="true">
+          <rect x="1" y="1" width="28" height="28" rx="8" fill="#132039"/>
+          <rect x="7" y="8" width="10" height="3" rx="1.5" fill="#ff6a2b"/>
+          <rect x="7" y="14" width="16" height="3" rx="1.5" fill="#a8d2f4"/>
+          <rect x="7" y="20" width="7" height="3" rx="1.5" fill="#ffffff"/>
+        </svg>
+        Сайтика
+      </a>
+      <nav class="nav" aria-label="Основное меню">
+        <a href="index.html#formats">Услуги</a>
+        <a href="index.html#prices">Цены</a>
+        <a href="index.html#projects">Работы</a>
+        <a href="index.html#faq">Вопросы</a>
+      </nav>
+      <div class="header__actions">
+        <a class="btn btn--ghost is-current" href="catalog.html" aria-current="page">Каталог</a>
+        <a class="btn btn--signal" href="index.html#contacts">Заказать сайт</a>
+      </div>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu" data-burger>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-menu>
+    <nav aria-label="Мобильное меню">
+      <a href="index.html#formats" style="--i:0">Услуги</a>
+      <a href="index.html#prices" style="--i:1">Цены</a>
+      <a href="index.html#projects" style="--i:2">Работы</a>
+      <a href="catalog.html" style="--i:3" aria-current="page">Каталог</a>
+      <a href="index.html#faq" style="--i:4">Вопросы</a>
+    </nav>
+    <a class="btn btn--signal btn--block" href="index.html#contacts">Заказать сайт</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ===================== ПЕРВЫЙ ЭКРАН КАТАЛОГА ===================== -->
+    <section class="hero cat-hero" id="top">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="hero__spot" aria-hidden="true"></div>
+      <div class="hero__decor" aria-hidden="true">
+        <span class="deco deco--ring" data-depth="1.6" data-parallax="-0.25"></span>
+        <span class="deco deco--plus" data-depth="2.4" data-parallax="-0.4"></span>
+        <span class="deco deco--plus deco--plus-2" data-depth="1.2" data-parallax="-0.15"></span>
+        <span class="deco deco--dot" data-depth="3" data-parallax="-0.55"></span>
+        <span class="deco deco--square" data-depth="2" data-parallax="-0.35"></span>
+      </div>
+      <div class="wrap hero__inner cat-hero__inner">
+        <div class="hero__copy" data-parallax="0.12">
+          <h1 class="hero__title" data-split>
+            <span class="line"><span>Готовые сайты для&nbsp;вашего бизнеса</span></span>
+            <span class="line"><span>Готовые дизайны</span></span>
+          </h1>
+          <p class="hero__lead" data-reveal style="--d:3">Выберите понравившийся дизайн, а мы адаптируем его под ваш бизнес: заменим тексты, фотографии и логотип. Без долгой разработки с нуля.</p>
+          <div class="cat-price" data-reveal style="--d:4">
+            <p class="cat-price__value">от <span data-count-to="2000">2 000</span>&nbsp;₽</p>
+            <p class="cat-price__note">Стандартная настройка в существующей структуре. Дополнительные работы согласуем отдельно.</p>
+          </div>
+          <div class="hero__actions" data-reveal style="--d:5">
+            <a class="btn btn--signal" href="#templates">Выбрать сайт</a>
+            <a class="btn btn--ghost" href="index.html#contacts">Уникальный дизайн</a>
+          </div>
+        </div>
+
+        <div class="fan-wrap" data-reveal style="--d:2" aria-hidden="true">
+          <div class="fan" data-fan data-tilt-target>
+            <span class="fan__card" style="--i:-2">
+              <span class="fan__bar"><i></i><i></i><i></i></span>
+              <img src="assets/images/catalog/tork-one.webp" width="1008" height="672" alt="">
+            </span>
+            <span class="fan__card" style="--i:-1">
+              <span class="fan__bar"><i></i><i></i><i></i></span>
+              <img src="assets/images/catalog/golden-hands.webp" width="1008" height="672" alt="">
+            </span>
+            <span class="fan__card" style="--i:0">
+              <span class="fan__bar"><i></i><i></i><i></i></span>
+              <img src="assets/images/catalog/mirelle.webp" width="1008" height="672" alt="" fetchpriority="high">
+            </span>
+            <span class="fan__card" style="--i:1">
+              <span class="fan__bar"><i></i><i></i><i></i></span>
+              <img src="assets/images/catalog/pulse-eight.webp" width="1008" height="672" alt="">
+            </span>
+            <span class="fan__card" style="--i:2">
+              <span class="fan__bar"><i></i><i></i><i></i></span>
+              <img src="assets/images/catalog/green-wood.webp" width="1008" height="672" alt="">
+            </span>
+          </div>
+          <span class="fan__sticker"><b>18</b>готовых<br>дизайнов</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== БЕГУЩАЯ ЛЕНТА ===================== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__row" data-ticker-row="1">
+        <div class="ticker__track">
+          <span>Красота и здоровье</span><span>Сервисы и технологии</span><span>Автосервисы</span><span>Строительство</span><span>Спорт и фитнес</span>
+        </div>
+      </div>
+      <div class="ticker__row ticker__row--alt" data-ticker-row="-1">
+        <div class="ticker__track">
+          <span>Редакционный</span><span>Тёплый</span><span>Продуктовый</span><span>Минималистичный</span><span>Выразительный</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== ШАБЛОНЫ ===================== -->
+    <section class="section templates" id="templates">
+      <div class="wrap">
+        <div class="templates__head">
+          <h2 data-split><span class="line"><span>Выберите свой сайт</span></span></h2>
+          <p data-reveal>Рассмотрите дизайн и откройте работающую демоверсию на странице шаблона.</p>
+        </div>
+
+        <form class="filters" action="catalog.html#templates" method="get" role="search" data-filters data-reveal>
+          <div class="filters__field filters__field--search">
+            <label for="f-q">Найти шаблон</label>
+            <div class="search">
+              <svg class="search__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></svg>
+              <input id="f-q" name="q" type="search" placeholder="Название или сфера бизнеса" autocomplete="off" enterkeyhint="search">
+              <button class="search__clear" type="button" aria-label="Очистить поиск" data-clear hidden>
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="filters__field">
+            <span class="filters__label" id="f-cat-label">Сфера бизнеса</span>
+            <div class="select" data-select="category">
+              <input type="hidden" name="category" value="">
+              <button class="select__btn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="f-cat-label f-cat-value" aria-controls="f-cat-list">
+                <span id="f-cat-value" data-select-value>Все сайты</span>
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>
+              </button>
+              <ul class="select__list" id="f-cat-list" role="listbox" tabindex="-1" aria-labelledby="f-cat-label">
+                    <li id="cat-opt-0" role="option" data-value="" aria-selected="true">Все сайты</li>
+                    <li id="cat-opt-1" role="option" data-value="beauty" aria-selected="false">Красота и здоровье</li>
+                    <li id="cat-opt-2" role="option" data-value="technology" aria-selected="false">Сервисы и технологии</li>
+                    <li id="cat-opt-3" role="option" data-value="auto" aria-selected="false">Автосервисы</li>
+                    <li id="cat-opt-4" role="option" data-value="construction" aria-selected="false">Строительство</li>
+                    <li id="cat-opt-5" role="option" data-value="fitness" aria-selected="false">Спорт и фитнес</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="filters__field">
+            <span class="filters__label" id="f-style-label">Характер дизайна</span>
+            <div class="select" data-select="style">
+              <input type="hidden" name="style" value="">
+              <button class="select__btn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="f-style-label f-style-value" aria-controls="f-style-list">
+                <span id="f-style-value" data-select-value>Все стили</span>
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>
+              </button>
+              <ul class="select__list" id="f-style-list" role="listbox" tabindex="-1" aria-labelledby="f-style-label">
+                    <li id="style-opt-0" role="option" data-value="" aria-selected="true">Все стили</li>
+                    <li id="style-opt-1" role="option" data-value="editorial" aria-selected="false">Редакционный</li>
+                    <li id="style-opt-2" role="option" data-value="warm" aria-selected="false">Тёплый</li>
+                    <li id="style-opt-3" role="option" data-value="product" aria-selected="false">Продуктовый</li>
+                    <li id="style-opt-4" role="option" data-value="minimal" aria-selected="false">Минималистичный</li>
+                    <li id="style-opt-5" role="option" data-value="bold" aria-selected="false">Выразительный</li>
+              </ul>
+            </div>
+          </div>
+
+          <button class="btn btn--signal filters__submit" type="submit">Показать сайты</button>
+        </form>
+
+        <div class="results-bar" aria-live="polite">
+          <p class="results-bar__count">Найдено сайтов: <b data-count>18</b></p>
+          <button class="results-bar__reset" type="button" data-reset hidden>Сбросить фильтры</button>
+        </div>
+
+        <div class="tpl-grid" data-grid>
+          <article class="tpl" data-reveal data-slug="beauty-she" data-category="beauty" data-style="editorial" data-search="beauty she красота и здоровье редакционный современный сайт для салона красоты с презентацией услуг, изображениями, контактами и переходом к записи." style="--d:0">
+            <a class="tpl__shot" href="template.html?slug=beauty-she" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>beauty-she.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/beauty-she.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=beauty-she">BEAUTY SHE</a></h3>
+                <a class="tpl__demo" href="https://beauty-she.vercel.app/" target="_blank" rel="noopener" aria-label="Демо BEAUTY SHE — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Красота и здоровье</span><span class="tpl__style">Редакционный</span></p>
+              <p class="tpl__desc">Современный сайт для салона красоты с презентацией услуг, изображениями, контактами и переходом к записи.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 000&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=beauty-she">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="golden-hands" data-category="beauty" data-style="warm" data-search="золотые ручки красота и здоровье теплый сайт школы-студии красоты с направлениями услуг, галереей, информацией о студии и контактами. салон маникюр педикюр ногти" style="--d:1">
+            <a class="tpl__shot" href="template.html?slug=golden-hands" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>goldenhands38.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/golden-hands.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=golden-hands">Золотые ручки</a></h3>
+                <a class="tpl__demo" href="https://goldenhands38.vercel.app/" target="_blank" rel="noopener" aria-label="Демо Золотые ручки — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Красота и здоровье</span><span class="tpl__style">Тёплый</span></p>
+              <p class="tpl__desc">Сайт школы-студии красоты с направлениями услуг, галереей, информацией о студии и контактами.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 000&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=golden-hands">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="notimo" data-category="technology" data-style="product" data-search="notimo сервисы и технологии продуктовый лендинг для цифрового сервиса онлайн-записи клиентов с презентацией возможностей продукта." style="--d:2">
+            <a class="tpl__shot" href="template.html?slug=notimo" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>notimo-three.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/notimo.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=notimo">Notimo</a></h3>
+                <a class="tpl__demo" href="https://notimo-three.vercel.app/" target="_blank" rel="noopener" aria-label="Демо Notimo — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Сервисы и технологии</span><span class="tpl__style">Продуктовый</span></p>
+              <p class="tpl__desc">Лендинг для цифрового сервиса онлайн-записи клиентов с презентацией возможностей продукта.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 000&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=notimo">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="autoservice" data-category="auto" data-style="editorial" data-search="автопрофи автосервисы редакционный сайт автосервиса с услугами ремонта, прайс-листом и этапами обслуживания." style="--d:0">
+            <a class="tpl__shot" href="template.html?slug=autoservice" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>autoservice-five-coral.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/autoservice.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=autoservice">АвтоПрофи</a></h3>
+                <a class="tpl__demo" href="https://autoservice-five-coral.vercel.app/" target="_blank" rel="noopener" aria-label="Демо АвтоПрофи — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Автосервисы</span><span class="tpl__style">Редакционный</span></p>
+              <p class="tpl__desc">Сайт автосервиса с услугами ремонта, прайс-листом и этапами обслуживания.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 222&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=autoservice">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="autotork" data-category="auto" data-style="editorial" data-search="автоторк автосервисы редакционный лендинг автосервиса с компактной подачей услуг, цен и порядка ремонта." style="--d:1">
+            <a class="tpl__shot" href="template.html?slug=autotork" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>autotork-ten.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/autotork.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=autotork">АвтоТорк</a></h3>
+                <a class="tpl__demo" href="https://autotork-ten.vercel.app/" target="_blank" rel="noopener" aria-label="Демо АвтоТорк — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Автосервисы</span><span class="tpl__style">Редакционный</span></p>
+              <p class="tpl__desc">Лендинг автосервиса с компактной подачей услуг, цен и порядка ремонта.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 222&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=autotork">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="avtoservis" data-category="auto" data-style="editorial" data-search="автомастер автосервисы редакционный сайт для ремонта и обслуживания автомобилей с услугами, ценами и контактами." style="--d:2">
+            <a class="tpl__shot" href="template.html?slug=avtoservis" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>avtoservis-ten.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/avtoservis.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=avtoservis">АвтоМастер</a></h3>
+                <a class="tpl__demo" href="https://avtoservis-ten.vercel.app/" target="_blank" rel="noopener" aria-label="Демо АвтоМастер — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Автосервисы</span><span class="tpl__style">Редакционный</span></p>
+              <p class="tpl__desc">Сайт для ремонта и обслуживания автомобилей с услугами, ценами и контактами.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 222&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=avtoservis">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="beauty-jade" data-category="beauty" data-style="warm" data-search="lumière красота и здоровье теплый сайт салона красоты с услугами, ценами, мастерами и информацией о салоне." style="--d:0">
+            <a class="tpl__shot" href="template.html?slug=beauty-jade" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>beauty-jade-eight.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/beauty-jade.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=beauty-jade">Lumière</a></h3>
+                <a class="tpl__demo" href="https://beauty-jade-eight.vercel.app/" target="_blank" rel="noopener" aria-label="Демо Lumière — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Красота и здоровье</span><span class="tpl__style">Тёплый</span></p>
+              <p class="tpl__desc">Сайт салона красоты с услугами, ценами, мастерами и информацией о салоне.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 222&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=beauty-jade">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="beauty-salon" data-category="beauty" data-style="warm" data-search="аврора красота и здоровье теплый сайт салона красоты с презентацией мастеров, примерами работ и прайс-листом." style="--d:1">
+            <a class="tpl__shot" href="template.html?slug=beauty-salon" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>beauty-salon-sm8c.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/beauty-salon.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=beauty-salon">Аврора</a></h3>
+                <a class="tpl__demo" href="https://beauty-salon-sm8c.vercel.app/" target="_blank" rel="noopener" aria-label="Демо Аврора — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Красота и здоровье</span><span class="tpl__style">Тёплый</span></p>
+              <p class="tpl__desc">Сайт салона красоты с презентацией мастеров, примерами работ и прайс-листом.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 222&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=beauty-salon">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="construction" data-category="construction" data-style="editorial" data-search="строймастер строительство редакционный сайт строительной компании с направлениями работ, ценами и этапами строительства." style="--d:2">
+            <a class="tpl__shot" href="template.html?slug=construction" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>construction-xi-eight.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/construction.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=construction">СтройМастер</a></h3>
+                <a class="tpl__demo" href="https://construction-xi-eight.vercel.app/" target="_blank" rel="noopener" aria-label="Демо СтройМастер — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Строительство</span><span class="tpl__style">Редакционный</span></p>
+              <p class="tpl__desc">Сайт строительной компании с направлениями работ, ценами и этапами строительства.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 222&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=construction">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="stroitelstvo" data-category="construction" data-style="editorial" data-search="стройдом строительство редакционный сайт для строительства домов, ремонта и отделки с услугами и порядком работы." style="--d:0">
+            <a class="tpl__shot" href="template.html?slug=stroitelstvo" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>stroitelstvo-orcin.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/stroitelstvo.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=stroitelstvo">СтройДом</a></h3>
+                <a class="tpl__demo" href="https://stroitelstvo-orcin.vercel.app/" target="_blank" rel="noopener" aria-label="Демо СтройДом — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Строительство</span><span class="tpl__style">Редакционный</span></p>
+              <p class="tpl__desc">Сайт для строительства домов, ремонта и отделки с услугами и порядком работы.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 222&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=stroitelstvo">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="nexus-avto" data-category="auto" data-style="minimal" data-search="nexus авто автосервисы минималистичный сайт детейлинг-центра с услугами, калькулятором и сравнением «до и после»." style="--d:1">
+            <a class="tpl__shot" href="template.html?slug=nexus-avto" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>nexus-avto.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/nexus-avto.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=nexus-avto">NEXUS Авто</a></h3>
+                <a class="tpl__demo" href="https://nexus-avto.vercel.app/" target="_blank" rel="noopener" aria-label="Демо NEXUS Авто — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Автосервисы</span><span class="tpl__style">Минималистичный</span></p>
+              <p class="tpl__desc">Сайт детейлинг-центра с услугами, калькулятором и сравнением «до и после».</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 222&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=nexus-avto">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="green-wood" data-category="construction" data-style="minimal" data-search="greenwood строительство минималистичный сайт загородного строительства с каталогом домов, подбором проекта и планировками." style="--d:2">
+            <a class="tpl__shot" href="template.html?slug=green-wood" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>grenn-wood.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/green-wood.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=green-wood">GreenWood</a></h3>
+                <a class="tpl__demo" href="https://grenn-wood.vercel.app/" target="_blank" rel="noopener" aria-label="Демо GreenWood — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Строительство</span><span class="tpl__style">Минималистичный</span></p>
+              <p class="tpl__desc">Сайт загородного строительства с каталогом домов, подбором проекта и планировками.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 222&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=green-wood">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="neo-beauty" data-category="beauty" data-style="bold" data-search="aura neo-beauty красота и здоровье выразительный выразительный сайт салона красоты с услугами и интерактивным подбором образа." style="--d:0">
+            <a class="tpl__shot" href="template.html?slug=neo-beauty" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>neo-beauty-eight.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/neo-beauty.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=neo-beauty">AURA Neo-Beauty</a></h3>
+                <a class="tpl__demo" href="https://neo-beauty-eight.vercel.app/" target="_blank" rel="noopener" aria-label="Демо AURA Neo-Beauty — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Красота и здоровье</span><span class="tpl__style">Выразительный</span></p>
+              <p class="tpl__desc">Выразительный сайт салона красоты с услугами и интерактивным подбором образа.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 222&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=neo-beauty">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="mirelle" data-category="beauty" data-style="editorial" data-search="mirelle красота и здоровье редакционный сайт студии красоты с прайсом по направлениям, конструктором услуг и галереей работ." style="--d:1">
+            <a class="tpl__shot" href="template.html?slug=mirelle" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>beauty-salon-template-kappa.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/mirelle.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=mirelle">Mirelle</a></h3>
+                <a class="tpl__demo" href="https://beauty-salon-template-kappa.vercel.app/" target="_blank" rel="noopener" aria-label="Демо Mirelle — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Красота и здоровье</span><span class="tpl__style">Редакционный</span></p>
+              <p class="tpl__desc">Сайт студии красоты с прайсом по направлениям, конструктором услуг и галереей работ.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 222&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=mirelle">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="osnova" data-category="construction" data-style="bold" data-search="основа строительство выразительный сайт строительной компании с калькулятором, этапами работы и примерами объектов." style="--d:2">
+            <a class="tpl__shot" href="template.html?slug=osnova" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>beauty-salon-template-gyqp.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/osnova.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=osnova">Основа</a></h3>
+                <a class="tpl__demo" href="https://beauty-salon-template-gyqp.vercel.app/" target="_blank" rel="noopener" aria-label="Демо Основа — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Строительство</span><span class="tpl__style">Выразительный</span></p>
+              <p class="tpl__desc">Сайт строительной компании с калькулятором, этапами работы и примерами объектов.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 222&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=osnova">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="tork-one" data-category="auto" data-style="bold" data-search="торк автосервисы выразительный сайт автосервиса с перечнем работ, прайсом и формой записи." style="--d:0">
+            <a class="tpl__shot" href="template.html?slug=tork-one" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>tork-one.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/tork-one.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=tork-one">ТОРК</a></h3>
+                <a class="tpl__demo" href="https://tork-one.vercel.app/" target="_blank" rel="noopener" aria-label="Демо ТОРК — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Автосервисы</span><span class="tpl__style">Выразительный</span></p>
+              <p class="tpl__desc">Сайт автосервиса с перечнем работ, прайсом и формой записи.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 222&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=tork-one">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="pulse-eight" data-category="fitness" data-style="bold" data-search="пульс спорт и фитнес выразительный сайт фитнес-клуба с направлениями тренировок, абонементами, расписанием и тренерами." style="--d:1">
+            <a class="tpl__shot" href="template.html?slug=pulse-eight" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>pulse-eight-peach-20.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/pulse-eight.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=pulse-eight">Пульс</a></h3>
+                <a class="tpl__demo" href="https://pulse-eight-peach-20.vercel.app/" target="_blank" rel="noopener" aria-label="Демо Пульс — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Спорт и фитнес</span><span class="tpl__style">Выразительный</span></p>
+              <p class="tpl__desc">Сайт фитнес-клуба с направлениями тренировок, абонементами, расписанием и тренерами.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 222&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=pulse-eight">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="tpl" data-reveal data-slug="myata" data-category="beauty" data-style="warm" data-search="мята красота и здоровье теплый сайт стоматологии с перечнем услуг, карточками врачей и интерактивной зубной картой." style="--d:2">
+            <a class="tpl__shot" href="template.html?slug=myata" data-cursor="Подробнее" data-tilt tabindex="-1" aria-hidden="true">
+              <span class="tpl__bar"><i></i><i></i><i></i><span>pulse-1qno.vercel.app</span></span>
+              <span class="tpl__img"><img src="assets/images/catalog/myata.webp" width="1008" height="672" loading="lazy" decoding="async" alt=""></span>
+            </a>
+            <div class="tpl__body">
+              <div class="tpl__head">
+                <h3><a href="template.html?slug=myata">Мята</a></h3>
+                <a class="tpl__demo" href="https://pulse-1qno.vercel.app/" target="_blank" rel="noopener" aria-label="Демо Мята — откроется в новой вкладке">Демо <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11L11 5M6 5h5v5"/></svg></a>
+              </div>
+              <p class="tpl__meta"><span>Красота и здоровье</span><span class="tpl__style">Тёплый</span></p>
+              <p class="tpl__desc">Сайт стоматологии с перечнем услуг, карточками врачей и интерактивной зубной картой.</p>
+              <div class="tpl__foot">
+                <p class="tpl__price"><b>2 222&nbsp;₽</b><span>Стандартная настройка</span></p>
+                <a class="btn btn--signal tpl__more" href="template.html?slug=myata">Подробнее</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="empty" data-empty hidden>
+          <div class="empty__art" aria-hidden="true"><i></i><i></i><i></i></div>
+          <h3>Пока нет совпадений</h3>
+          <p>Смените категорию, стиль или поисковый запрос.</p>
+          <button class="btn btn--ghost" type="button" data-reset>Все сайты</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== НАСТРОЙКА ===================== -->
+    <section class="section setup" id="setup">
+      <div class="wrap setup__grid">
+        <div class="setup__intro">
+          <h2 data-split>
+            <span class="line"><span>Настроим сайт</span></span>
+            <span class="line"><span>под ваш бизнес</span></span>
+          </h2>
+          <p data-reveal>Вы выбираете понравившийся дизайн, а мы заменяем тексты, фотографии и логотип на ваши. В результате вы получаете сайт с собственным оформлением и содержанием без необходимости разрабатывать его с нуля.</p>
+          <p data-reveal>Структура и состав страниц сохраняются. Стоимость и сроки фиксируем после согласования материалов и объёма работ.</p>
+          <div class="setup__actions" data-reveal>
+            <a class="btn btn--signal" href="#templates">Выбрать сайт</a>
+            <a class="btn btn--ghost" href="index.html#contacts">Уникальный дизайн</a>
+          </div>
+        </div>
+
+        <div class="setup__lists">
+          <div class="setup__card setup__card--in checklist" data-checklist data-reveal>
+            <h3>Стандартная настройка</h3>
+            <ul role="list">
+              <li style="--i:0"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Замена логотипа.</li>
+              <li style="--i:1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Замена существующих текстов.</li>
+              <li style="--i:2"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Замена изображений.</li>
+              <li style="--i:3"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Подстановка контактной информации.</li>
+              <li style="--i:4"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Настройка существующих контактных ссылок, если она предусмотрена шаблоном.</li>
+              <li style="--i:5"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Проверка сайта после внесённых изменений.</li>
+              <li style="--i:6"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Подготовка файлов для передачи.</li>
+            </ul>
+          </div>
+          <div class="setup__card setup__card--out" data-reveal style="--d:1">
+            <h3>Оплачивается отдельно</h3>
+            <ul role="list">
+              <li style="--i:0"><span class="plus" aria-hidden="true"></span>Добавление новых секций.</li>
+              <li style="--i:1"><span class="plus" aria-hidden="true"></span>Изменение структуры сайта.</li>
+              <li style="--i:2"><span class="plus" aria-hidden="true"></span>Создание новых страниц.</li>
+              <li style="--i:3"><span class="plus" aria-hidden="true"></span>Разработка новой функциональности.</li>
+              <li style="--i:4"><span class="plus" aria-hidden="true"></span>Интеграция сторонних сервисов.</li>
+              <li style="--i:5"><span class="plus" aria-hidden="true"></span>Размещение сайта на хостинге клиента.</li>
+              <li style="--i:6"><span class="plus" aria-hidden="true"></span>Домен и услуги хостинга.</li>
+              <li style="--i:7"><span class="plus" aria-hidden="true"></span>Последующие доработки, не включённые в согласованный объём.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== ПОДВАЛ ===================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <p class="footer__slogan">Сайты для небольших дел <span>и больших планов.</span></p>
+        <ul class="footer__links" role="list">
+          <li><a href="catalog.html">Каталог сайтов</a></li>
+          <li><a href="index.html#formats">Услуги студии</a></li>
+          <li><a href="index.html#prices">Цены и условия</a></li>
+          <li><a href="index.html#projects">Портфолио</a></li>
+          <li><a href="index.html#faq">Вопросы и ответы</a></li>
+          <li><a href="privacy.html">Конфиденциальность</a></li>
+        </ul>
+      </div>
+      <div class="footer__word" aria-hidden="true" data-parallax-x="0.25">Сайтика</div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Сайтика</span>
+        <a href="privacy.html#cookie">Использование cookie</a>
+        <button class="to-top" type="button" data-to-top>Наверх
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Кнопки снизу на телефоне -->
+  <div class="dock" data-dock>
+    <a class="btn btn--ghost" href="#templates">Шаблоны</a>
+    <a class="btn btn--signal" href="index.html#contacts">Заказать сайт</a>
+  </div>
+
+  <!-- Cookie -->
+  <div class="cookie" data-cookie role="dialog" aria-live="polite" aria-label="Уведомление об использовании cookie" hidden>
+    <p class="cookie__title">Мы используем cookie</p>
+    <p>Они помогают сайту работать и показывают, какие страницы полезны. Продолжая пользоваться сайтом, вы соглашаетесь с <a href="privacy.html#cookie">политикой конфиденциальности</a>.</p>
+    <div class="cookie__row">
+      <button class="btn btn--signal" type="button" data-cookie-accept>Хорошо</button>
+      <a class="btn btn--ghost" href="privacy.html#cookie">Подробнее</a>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/effects.js" defer></script>
+  <script src="assets/js/catalog.js" defer></script>
+</body>
+</html>
