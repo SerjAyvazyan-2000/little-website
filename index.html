@@ -13,10 +13,32 @@
   <link rel="preload" href="assets/fonts/lora-var.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="assets/fonts/inter-400.woff" as="font" type="font/woff" crossorigin>
   <link rel="stylesheet" href="style.css">
-  <script>document.documentElement.classList.add('js')</script>
+  <script>
+    (function (d) {
+      d.classList.add('js');
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('is-intro');
+    })(document.documentElement);
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">К содержимому</a>
+
+  <!-- Вступительная анимация (только главная) -->
+  <div class="intro" data-intro aria-hidden="true">
+    <div class="intro__panel"></div>
+    <div class="intro__panel"></div>
+    <div class="intro__panel"></div>
+    <div class="intro__panel"></div>
+    <div class="intro__content">
+      <div class="intro__logo">
+        <i></i><i></i><i></i>
+      </div>
+      <p class="intro__word"><span>Сайтика</span></p>
+      <p class="intro__status"><span data-intro-status>Собираем структуру</span></p>
+      <p class="intro__count"><span data-intro-count>0</span>%</p>
+      <div class="intro__bar"><i data-intro-bar></i></div>
+    </div>
+  </div>
 
   <!-- ===================== ШАПКА ===================== -->
   <header class="header" data-header>
@@ -62,8 +84,17 @@
     <!-- ===================== ПЕРВЫЙ ЭКРАН ===================== -->
     <section class="hero" id="top">
       <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="hero__spot" aria-hidden="true"></div>
+      <div class="hero__decor" aria-hidden="true">
+        <span class="deco deco--ring" data-depth="1.6" data-parallax="-0.25"></span>
+        <span class="deco deco--plus" data-depth="2.4" data-parallax="-0.4"></span>
+        <span class="deco deco--plus deco--plus-2" data-depth="1.2" data-parallax="-0.15"></span>
+        <span class="deco deco--measure" data-depth="0.8" data-parallax="-0.3"><i></i><b>48 ч</b><i></i></span>
+        <span class="deco deco--dot" data-depth="3" data-parallax="-0.55"></span>
+        <span class="deco deco--square" data-depth="2" data-parallax="-0.35"></span>
+      </div>
       <div class="wrap hero__inner">
-        <div class="hero__copy">
+        <div class="hero__copy" data-parallax="0.12">
           <h1 class="hero__title" data-split>
             <span class="line"><span>Создадим современный сайт для&nbsp;вашего бизнеса</span></span>
             <span class="line"><span>за&nbsp;2&nbsp;дня</span></span>
@@ -77,7 +108,7 @@
         </div>
 
         <!-- Живая сборка демо-сайта -->
-        <div class="stage" data-stage data-niche="coffee" data-reveal style="--d:2">
+        <div class="stage" data-stage data-niche="coffee" data-reveal style="--d:2" data-tilt-scene>
           <div class="stage__tabs" role="tablist" aria-label="Пример сайта для ниши">
             <button class="stage__tab" type="button" role="tab" aria-selected="true" data-niche-btn="coffee">Кофейня</button>
             <button class="stage__tab" type="button" role="tab" aria-selected="false" data-niche-btn="beauty">Салон красоты</button>
@@ -141,6 +172,20 @@
       </div>
     </section>
 
+    <!-- ===================== БЕГУЩАЯ ЛЕНТА ===================== -->
+    <div class="ticker" aria-hidden="true" data-ticker>
+      <div class="ticker__row" data-ticker-row="1">
+        <div class="ticker__track">
+          <span>Кофейни</span><span>Салоны красоты</span><span>Автосервисы</span><span>Фитнес-клубы</span><span>Частные мастера</span><span>Фотостудии</span><span>Цветочные</span><span>Ремонт</span>
+        </div>
+      </div>
+      <div class="ticker__row ticker__row--alt" data-ticker-row="-1">
+        <div class="ticker__track">
+          <span>Лендинг за 10 000 ₽</span><span>Шаблон за 2 000 ₽</span><span>До двух дней</span><span>Адаптив для телефона</span><span>Форма заявки</span><span>Базовое SEO</span>
+        </div>
+      </div>
+    </div>
+
     <!-- ===================== ЗАЧЕМ САЙТ ===================== -->
     <section class="section why">
       <div class="wrap">
@@ -152,7 +197,7 @@
           <p data-reveal>Потяните ползунок и сравните, как клиент видит одно и то же дело.</p>
         </div>
 
-        <div class="compare" data-compare data-reveal>
+        <div class="compare" data-compare data-reveal data-cursor="Тяни">
           <div class="compare__layer compare__feed" aria-hidden="true">
             <div class="feed__head">
               <span class="feed__avatar"></span>
@@ -299,7 +344,7 @@
 
         <div class="projects__grid">
           <article class="project project--mirelle" data-reveal style="--d:0">
-            <a class="project__shot" href="catalog.html#mirelle" aria-label="Открыть проект Mirelle">
+            <a class="project__shot" data-cursor="Смотреть" data-tilt href="catalog.html#mirelle" aria-label="Открыть проект Mirelle">
               <span class="mock mock--mirelle" aria-hidden="true">
                 <span class="mock__nav"><b>Mirelle</b><i></i><i></i><i></i></span>
                 <span class="mock__hero"><b>Красота без спешки</b><i class="mock__pic"></i></span>
@@ -317,7 +362,7 @@
           </article>
 
           <article class="project project--tork" data-reveal style="--d:1">
-            <a class="project__shot" href="catalog.html#tork" aria-label="Открыть проект ТОРК">
+            <a class="project__shot" data-cursor="Смотреть" data-tilt href="catalog.html#tork" aria-label="Открыть проект ТОРК">
               <span class="mock mock--tork" aria-hidden="true">
                 <span class="mock__nav"><b>ТОРК</b><i></i><i></i><i></i></span>
                 <span class="mock__hero"><b>Ремонт без сюрпризов в смете</b><i class="mock__pic"></i></span>
@@ -335,7 +380,7 @@
           </article>
 
           <article class="project project--pulse" data-reveal style="--d:2">
-            <a class="project__shot" href="catalog.html#pulse" aria-label="Открыть проект Пульс">
+            <a class="project__shot" data-cursor="Смотреть" data-tilt href="catalog.html#pulse" aria-label="Открыть проект Пульс">
               <span class="mock mock--pulse" aria-hidden="true">
                 <span class="mock__nav"><b>Пульс</b><i></i><i></i><i></i></span>
                 <span class="mock__hero"><b>Тренируйся в своём ритме</b><i class="mock__pic"></i></span>
@@ -694,7 +739,7 @@
           <li><a href="privacy.html">Конфиденциальность</a></li>
         </ul>
       </div>
-      <div class="footer__word" aria-hidden="true">Сайтика</div>
+      <div class="footer__word" aria-hidden="true" data-parallax-x="0.25">Сайтика</div>
       <div class="footer__bottom">
         <span>© <span data-year>2026</span> Сайтика</span>
         <a href="privacy.html#cookie">Использование cookie</a>
@@ -722,6 +767,7 @@
   </div>
 
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/effects.js" defer></script>
   <script src="assets/js/home.js" defer></script>
 </body>
 </html>

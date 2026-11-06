@@ -172,7 +172,15 @@
     // Первая сборка при загрузке
     if (!reduceMotion) {
       frame.classList.add('is-wire');
-      setTimeout(function () { build('coffee').then(scheduleAuto); }, 700);
+      var startBuild = function () {
+        setTimeout(function () { build('coffee').then(scheduleAuto); }, 500);
+      };
+      // ждём окончания вступительной анимации
+      if (document.documentElement.classList.contains('is-intro')) {
+        document.addEventListener('intro:done', startBuild, { once: true });
+      } else {
+        startBuild();
+      }
     } else {
       build('coffee');
     }
