@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Сайтика — сайт для вашего бизнеса за 2 дня, от 2 000 ₽</title>
+  <meta name="description" content="Студия Сайтика: лендинги, сайты-визитки и готовые сайты из каталога. Индивидуальный лендинг — 10 000 ₽, готовый шаблон — 2 000 ₽. Стандартный проект — до двух дней.">
+  <meta name="theme-color" content="#eaf1f8">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Сайтика — сайт для вашего бизнеса за 2 дня">
+  <meta property="og:description" content="Красивый, быстрый и удобный сайт для ваших клиентов. Без сложных технических вопросов и лишних расходов.">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/lora-var.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-400.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+
+  <!-- ===================== ШАПКА ===================== -->
+  <header class="header" data-header>
+    <div class="wrap header__bar">
+      <a class="logo" href="index.html" aria-label="Сайтика — на главную">
+        <svg class="logo__mark" viewBox="0 0 30 30" aria-hidden="true">
+          <rect x="1" y="1" width="28" height="28" rx="8" fill="#132039"/>
+          <rect x="7" y="8" width="10" height="3" rx="1.5" fill="#ff6a2b"/>
+          <rect x="7" y="14" width="16" height="3" rx="1.5" fill="#a8d2f4"/>
+          <rect x="7" y="20" width="7" height="3" rx="1.5" fill="#ffffff"/>
+        </svg>
+        Сайтика
+      </a>
+      <nav class="nav" aria-label="Основное меню">
+        <a href="#formats">Услуги</a>
+        <a href="#prices">Цены</a>
+        <a href="#projects">Работы</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+      <div class="header__actions">
+        <a class="btn btn--ghost" href="catalog.html">Каталог</a>
+        <a class="btn btn--signal" href="#contacts">Заказать сайт</a>
+      </div>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu" data-burger>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-menu>
+    <nav aria-label="Мобильное меню">
+      <a href="#formats" style="--i:0">Услуги</a>
+      <a href="#prices" style="--i:1">Цены</a>
+      <a href="#projects" style="--i:2">Работы</a>
+      <a href="catalog.html" style="--i:3">Каталог</a>
+      <a href="#faq" style="--i:4">Вопросы</a>
+    </nav>
+    <a class="btn btn--signal btn--block" href="#contacts">Заказать сайт</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ===================== ПЕРВЫЙ ЭКРАН ===================== -->
+    <section class="hero" id="top">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <h1 class="hero__title" data-split>
+            <span class="line"><span>Создадим современный сайт для&nbsp;вашего бизнеса</span></span>
+            <span class="line"><span>за&nbsp;2&nbsp;дня</span></span>
+          </h1>
+          <p class="hero__lead" data-reveal style="--d:3">Красивый, быстрый и удобный сайт для ваших клиентов. Без сложных технических вопросов, долгого ожидания и лишних расходов.</p>
+          <div class="hero__actions" data-reveal style="--d:4">
+            <a class="btn btn--signal" href="#contacts">Получить расчёт сайта</a>
+            <a class="btn btn--ghost" href="#projects">Посмотреть работы</a>
+          </div>
+          <p class="hero__note" data-reveal style="--d:5">До двух дней — для стандартных проектов после согласования требований, получения материалов и предоплаты.</p>
+        </div>
+
+        <!-- Живая сборка демо-сайта -->
+        <div class="stage" data-stage data-niche="coffee" data-reveal style="--d:2">
+          <div class="stage__tabs" role="tablist" aria-label="Пример сайта для ниши">
+            <button class="stage__tab" type="button" role="tab" aria-selected="true" data-niche-btn="coffee">Кофейня</button>
+            <button class="stage__tab" type="button" role="tab" aria-selected="false" data-niche-btn="beauty">Салон красоты</button>
+            <button class="stage__tab" type="button" role="tab" aria-selected="false" data-niche-btn="master">Частный мастер</button>
+            <span class="stage__pill" aria-hidden="true"></span>
+          </div>
+
+          <div class="stage__frame">
+            <div class="browser" aria-hidden="true">
+              <div class="browser__bar">
+                <i></i><i></i><i></i>
+                <span class="browser__url"><span data-f="url">kroshka.ru</span></span>
+              </div>
+              <div class="demo">
+                <div class="demo__nav b" data-label="меню">
+                  <span class="demo__brand" data-f="brand">Крошка</span>
+                  <span class="demo__links"><i></i><i></i><i></i></span>
+                </div>
+                <div class="demo__hero">
+                  <div class="demo__text">
+                    <span class="b demo__kicker" data-label="подзаголовок" data-f="kicker">Кофейня у дома</span>
+                    <span class="b demo__title" data-label="заголовок" data-f="title">Хороший день начинается здесь.</span>
+                    <span class="b demo__lines" data-label="описание"><i></i><i></i><i></i></span>
+                    <span class="b demo__btn" data-label="кнопка" data-f="btn">Посмотреть меню</span>
+                  </div>
+                  <div class="b demo__art" data-label="фото">
+                    <span class="art art--coffee"><i class="cup"></i><i class="steam"></i><i class="steam"></i><i class="saucer"></i></span>
+                    <span class="art art--beauty"><i class="arch"></i><i class="drop"></i><i class="drop"></i></span>
+                    <span class="art art--master"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                  </div>
+                </div>
+                <div class="demo__cards">
+                  <span class="b" data-label="услуга"><i></i><b data-f="c1">Эспрессо</b></span>
+                  <span class="b" data-label="услуга"><i></i><b data-f="c2">Завтраки</b></span>
+                  <span class="b" data-label="контакты"><i></i><b data-f="c3">Как пройти</b></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="phone" aria-hidden="true">
+              <div class="phone__screen">
+                <span class="b phone__brand" data-label="меню" data-f="brand">Крошка</span>
+                <span class="b phone__title" data-label="заголовок" data-f="ptitle">Хороший день начинается с маленькой чашки.</span>
+                <span class="b phone__art" data-label="фото"></span>
+                <span class="b phone__btn" data-label="кнопка" data-f="btn">Посмотреть меню</span>
+              </div>
+            </div>
+
+            <div class="build" role="status" aria-live="polite">
+              <div class="build__steps">
+                <span data-step="0">Структура</span>
+                <span data-step="1">Оформление</span>
+                <span data-step="2">Адаптация</span>
+                <span data-step="3">Готово</span>
+              </div>
+              <div class="build__track"><i data-progress></i></div>
+            </div>
+          </div>
+          <p class="stage__caption" data-f="caption">Демо-проект. Тёплый лендинг с меню и атмосферой места.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ЗАЧЕМ САЙТ ===================== -->
+    <section class="section why">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-split>
+            <span class="line"><span>Ваш бизнес заслуживает большего,</span></span>
+            <span class="line"><span>чем просто страница в соцсетях</span></span>
+          </h2>
+          <p data-reveal>Потяните ползунок и сравните, как клиент видит одно и то же дело.</p>
+        </div>
+
+        <div class="compare" data-compare data-reveal>
+          <div class="compare__layer compare__feed" aria-hidden="true">
+            <div class="feed__head">
+              <span class="feed__avatar"></span>
+              <span class="feed__name">kroshka_coffee<small>312 публикаций</small></span>
+              <span class="feed__follow">Подписаться</span>
+            </div>
+            <div class="feed__grid">
+              <span class="post post--a"><em>Цены — в директ</em></span>
+              <span class="post post--b"><em>Мы переехали! Адрес в посте от марта</em></span>
+              <span class="post post--c"></span>
+              <span class="post post--d"><em>Меню — на третьем фото</em></span>
+              <span class="post post--e"></span>
+              <span class="post post--f"><em>Акция до пятницы?</em></span>
+            </div>
+            <div class="feed__comments">
+              <span>А сколько стоит капучино?</span>
+              <span>Вы ещё работаете на Садовой?</span>
+              <span>Почему не отвечаете в директ...</span>
+            </div>
+          </div>
+
+          <div class="compare__layer compare__site" aria-hidden="true">
+            <div class="site__head">
+              <b>Крошка</b>
+              <span>Меню</span><span>Адрес</span><span class="site__call">Позвонить</span>
+            </div>
+            <div class="site__body">
+              <div class="site__menu">
+                <h4>Меню и цены</h4>
+                <p><span>Капучино</span><i></i><b>220 ₽</b></p>
+                <p><span>Раф с халвой</span><i></i><b>280 ₽</b></p>
+                <p><span>Сырники</span><i></i><b>310 ₽</b></p>
+                <p><span>Круассан</span><i></i><b>190 ₽</b></p>
+              </div>
+              <div class="site__info">
+                <div class="site__map"><i></i></div>
+                <p><b>ул. Садовая, 12</b>Каждый день с 8:00 до 21:00</p>
+                <span class="site__cta">Оставить заявку</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="compare__handle" aria-hidden="true"><span></span></div>
+          <span class="compare__tag compare__tag--l" aria-hidden="true">Страница в соцсетях</span>
+          <span class="compare__tag compare__tag--r" aria-hidden="true">Свой сайт</span>
+          <label class="visually-hidden" for="compare-range">Сравнить страницу в соцсетях и сайт</label>
+          <input class="compare__range" id="compare-range" type="range" min="0" max="100" value="50" step="1">
+        </div>
+
+        <ul class="why__points" role="list">
+          <li data-reveal style="--d:0">
+            <h3>Всё важное — по одному адресу</h3>
+            <p>Клиенту не нужно искать цены в ленте, а адрес — в старых публикациях. Услуги, условия и контакты собраны вместе.</p>
+          </li>
+          <li data-reveal style="--d:1">
+            <h3>Предложение легко понять</h3>
+            <p>Человек видит, что вы делаете, кому это подходит и чем отличается ваше предложение. Можно спокойно изучить детали.</p>
+          </li>
+          <li data-reveal style="--d:2">
+            <h3>Связаться проще</h3>
+            <p>Позвонить, написать или оставить заявку можно прямо на сайте. Следующий шаг виден и с компьютера, и с телефона.</p>
+          </li>
+          <li data-reveal style="--d:3">
+            <h3>Есть куда вести рекламу</h3>
+            <p>Собственная страница помогает рассказать о конкретном предложении тем, кто пришёл из рекламы или поиска.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== ФОРМАТЫ ===================== -->
+    <section class="section formats" id="formats">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-split><span class="line"><span>Подберём сайт под вашу задачу</span></span></h2>
+        </div>
+
+        <ul class="formats__list" role="list">
+          <li class="format" data-reveal>
+            <svg class="format__scheme" viewBox="0 0 120 150" aria-hidden="true">
+              <rect x="1" y="1" width="118" height="148" rx="10" class="s-frame"/>
+              <rect x="12" y="12" width="96" height="34" rx="5" class="s-accent"/>
+              <rect x="12" y="54" width="60" height="6" rx="3" class="s-line"/>
+              <rect x="12" y="66" width="96" height="22" rx="5" class="s-block"/>
+              <rect x="12" y="96" width="96" height="22" rx="5" class="s-block"/>
+              <rect x="12" y="126" width="44" height="12" rx="6" class="s-btn"/>
+            </svg>
+            <div class="format__body">
+              <h3>Лендинг под ключ</h3>
+              <p class="format__for">Для конкретной услуги, продукта или рекламной кампании.</p>
+              <p>Одна страница, которая последовательно раскрывает ваше предложение.</p>
+            </div>
+            <a class="btn btn--ghost format__cta" href="#contacts" data-route="new">Обсудить лендинг</a>
+          </li>
+          <li class="format" data-reveal>
+            <svg class="format__scheme" viewBox="0 0 120 150" aria-hidden="true">
+              <rect x="1" y="1" width="118" height="148" rx="10" class="s-frame"/>
+              <circle cx="36" cy="40" r="20" class="s-accent"/>
+              <rect x="64" y="26" width="44" height="7" rx="3.5" class="s-line"/>
+              <rect x="64" y="40" width="32" height="7" rx="3.5" class="s-line"/>
+              <rect x="12" y="74" width="96" height="6" rx="3" class="s-line"/>
+              <rect x="12" y="86" width="80" height="6" rx="3" class="s-line"/>
+              <rect x="12" y="110" width="96" height="26" rx="6" class="s-btn"/>
+            </svg>
+            <div class="format__body">
+              <h3>Сайт-визитка</h3>
+              <p class="format__for">Для небольшого бизнеса и частных специалистов.</p>
+              <p>Главное о компании или специалисте: услуги, подход и контакты.</p>
+            </div>
+            <a class="btn btn--ghost format__cta" href="#contacts" data-route="new">Обсудить сайт-визитку</a>
+          </li>
+          <li class="format" data-reveal>
+            <svg class="format__scheme" viewBox="0 0 120 150" aria-hidden="true">
+              <rect x="1" y="1" width="118" height="148" rx="10" class="s-frame"/>
+              <rect x="12" y="12" width="44" height="58" rx="5" class="s-accent"/>
+              <rect x="64" y="12" width="44" height="58" rx="5" class="s-block"/>
+              <rect x="12" y="78" width="44" height="58" rx="5" class="s-block"/>
+              <rect x="64" y="78" width="44" height="58" rx="5" class="s-block"/>
+            </svg>
+            <div class="format__body">
+              <h3>Готовый сайт из каталога</h3>
+              <p class="format__for">Для тех, кто хочет начать с готовой структуры.</p>
+              <p>Вы выбираете дизайн, мы заменяем тексты, изображения и логотип.</p>
+            </div>
+            <a class="btn btn--ghost format__cta" href="catalog.html">Выбрать шаблон</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== РАБОТЫ ===================== -->
+    <section class="section projects" id="projects">
+      <div class="wrap">
+        <div class="projects__head">
+          <div class="section-head">
+            <h2 data-split>
+              <span class="line"><span>Не представляйте будущий сайт.</span></span>
+              <span class="line"><span>Посмотрите, как он работает</span></span>
+            </h2>
+            <p data-reveal>Демонстрационные проекты студии: разные характеры, ниши и способы рассказать о бизнесе.</p>
+          </div>
+          <a class="btn btn--light" href="catalog.html" data-reveal>Все дизайны в каталоге</a>
+        </div>
+
+        <div class="projects__grid">
+          <article class="project project--mirelle" data-reveal style="--d:0">
+            <a class="project__shot" href="catalog.html#mirelle" aria-label="Открыть проект Mirelle">
+              <span class="mock mock--mirelle" aria-hidden="true">
+                <span class="mock__nav"><b>Mirelle</b><i></i><i></i><i></i></span>
+                <span class="mock__hero"><b>Красота без спешки</b><i class="mock__pic"></i></span>
+                <span class="mock__price"><span>Маникюр</span><span>Брови</span><span>Уход за лицом</span><span>Массаж</span></span>
+                <span class="mock__builder"><i></i><i></i><i></i><em>Собрать свой уход</em></span>
+                <span class="mock__gallery"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+              </span>
+            </a>
+            <div class="project__info">
+              <h3>Mirelle</h3>
+              <p class="project__niche">Красота и здоровье, демо-проект</p>
+              <p>Сайт студии красоты с прайсом по направлениям, конструктором услуг и галереей работ.</p>
+              <a class="link" href="catalog.html#mirelle">Посмотреть проект</a>
+            </div>
+          </article>
+
+          <article class="project project--tork" data-reveal style="--d:1">
+            <a class="project__shot" href="catalog.html#tork" aria-label="Открыть проект ТОРК">
+              <span class="mock mock--tork" aria-hidden="true">
+                <span class="mock__nav"><b>ТОРК</b><i></i><i></i><i></i></span>
+                <span class="mock__hero"><b>Ремонт без сюрпризов в смете</b><i class="mock__pic"></i></span>
+                <span class="mock__price"><span>Замена масла</span><span>Диагностика</span><span>Шиномонтаж</span><span>Ходовая</span></span>
+                <span class="mock__form"><i></i><i></i><em>Записаться на ремонт</em></span>
+                <span class="mock__gallery"><i></i><i></i><i></i></span>
+              </span>
+            </a>
+            <div class="project__info">
+              <h3>ТОРК</h3>
+              <p class="project__niche">Автосервисы, демо-проект</p>
+              <p>Сайт автосервиса с перечнем работ, прайсом и формой записи.</p>
+              <a class="link" href="catalog.html#tork">Посмотреть проект</a>
+            </div>
+          </article>
+
+          <article class="project project--pulse" data-reveal style="--d:2">
+            <a class="project__shot" href="catalog.html#pulse" aria-label="Открыть проект Пульс">
+              <span class="mock mock--pulse" aria-hidden="true">
+                <span class="mock__nav"><b>Пульс</b><i></i><i></i><i></i></span>
+                <span class="mock__hero"><b>Тренируйся в своём ритме</b><i class="mock__pic"></i></span>
+                <span class="mock__price"><span>Функциональный</span><span>Йога</span><span>Бокс</span><span>Сайкл</span></span>
+                <span class="mock__table"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="mock__gallery"><i></i><i></i><i></i></span>
+              </span>
+            </a>
+            <div class="project__info">
+              <h3>Пульс</h3>
+              <p class="project__niche">Спорт и фитнес, демо-проект</p>
+              <p>Сайт фитнес-клуба с направлениями тренировок, абонементами, расписанием и тренерами.</p>
+              <a class="link" href="catalog.html#pulse">Посмотреть проект</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ЦЕНЫ ===================== -->
+    <section class="section prices" id="prices">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-split>
+            <span class="line"><span>Стоимость известна заранее.</span></span>
+            <span class="line"><span>Вы понимаете, за что платите</span></span>
+          </h2>
+          <p data-reveal>Выберите формат — итог посчитается сразу.</p>
+        </div>
+
+        <div class="calc" data-calc>
+          <fieldset class="calc__plans">
+            <legend class="visually-hidden">Формат сайта</legend>
+
+            <label class="plan" data-reveal style="--d:0">
+              <input type="radio" name="plan" value="2000" data-route="template">
+              <span class="plan__top">
+                <span class="plan__name">Готовый шаблон</span>
+                <span class="plan__radio" aria-hidden="true"></span>
+              </span>
+              <span class="plan__price">2 000 ₽</span>
+              <span class="plan__desc">Текущая стоимость адаптации в каталоге. Цена фиксируется выбранным шаблоном.</span>
+              <span class="plan__list">
+                <span>Замена текстов и изображений</span>
+                <span>Ваш логотип и контакты</span>
+                <span>Сохранение дизайна и структуры</span>
+              </span>
+            </label>
+
+            <label class="plan" data-reveal style="--d:1">
+              <input type="radio" name="plan" value="10000" data-route="new" checked>
+              <span class="plan__top">
+                <span class="plan__name">Индивидуальный лендинг</span>
+                <span class="plan__radio" aria-hidden="true"></span>
+              </span>
+              <span class="plan__price">10 000 ₽</span>
+              <span class="plan__desc">Стоимость стандартного лендинга в согласованном объёме. Дополнительные задачи оцениваем отдельно.</span>
+              <span class="plan__list">
+                <span>Структура под ваше предложение</span>
+                <span>Индивидуальное оформление</span>
+                <span>Адаптация под разные экраны</span>
+              </span>
+            </label>
+          </fieldset>
+
+          <aside class="calc__total" data-reveal style="--d:2">
+            <label class="toggle">
+              <input type="checkbox" data-hosting value="990">
+              <span class="toggle__ui" aria-hidden="true"></span>
+              <span>Разместить на моём хостинге <b>+990 ₽</b></span>
+            </label>
+
+            <div class="calc__sum">
+              <span class="calc__label">Итого за разработку</span>
+              <output class="calc__value" data-total aria-live="polite">10 000 ₽</output>
+            </div>
+
+            <p class="calc__note">Домен и хостинг оплачиваются отдельно. Совместимость, новые функции и переработку шаблона согласуем до начала работы.</p>
+
+            <a class="btn btn--signal btn--block" href="#contacts" data-calc-cta>Получить расчёт сайта</a>
+            <a class="link calc__catalog" href="catalog.html">Посмотреть шаблоны и цены</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== КАЧЕСТВО ===================== -->
+    <section class="section quality">
+      <div class="wrap quality__grid">
+        <div class="quality__intro">
+          <h2 data-split>
+            <span class="line"><span>Мы убрали лишние процессы.</span></span>
+            <span class="line"><span>Сохранили высокую</span></span>
+            <span class="line"><span>планку качества</span></span>
+          </h2>
+          <p class="quality__lead" data-reveal>Автоматизация, современные инструменты и искусственный интеллект помогают ускорять повторяющиеся задачи. Решения и готовый результат проверяет команда.</p>
+
+          <dl class="quality__points">
+            <div data-reveal style="--d:0">
+              <dt>Быстрая разработка</dt>
+              <dd>Используем отлаженную основу и инструменты, чтобы уделить время содержанию, интерфейсу и вашей задаче.</dd>
+            </div>
+            <div data-reveal style="--d:1">
+              <dt>Понятный процесс</dt>
+              <dd>Один менеджер собирает вопросы и обратную связь. Объём, стоимость и срок согласуем заранее.</dd>
+            </div>
+            <div data-reveal style="--d:2">
+              <dt>Проверка перед передачей</dt>
+              <dd>Проверяем адаптивность, ссылки, контактные элементы и согласованный функционал.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="checklist" data-checklist>
+          <h3>Получаете не просто красивую страницу, а готовый сайт</h3>
+          <p class="checklist__sub">Стандартный состав фиксируем в предложении до начала разработки.</p>
+          <ul role="list">
+            <li style="--i:0"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Адаптивный интерфейс для телефона, планшета и компьютера</li>
+            <li style="--i:1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Современное оформление</li>
+            <li style="--i:2"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Понятная структура</li>
+            <li style="--i:3"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Контактные элементы и согласованный функционал</li>
+            <li style="--i:4"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Базовая SEO-подготовка</li>
+            <li style="--i:5"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Проверка корректности работы</li>
+            <li style="--i:6"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Проверка сайта на соответствие требованиям законодательства</li>
+            <li style="--i:7"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Передача готовых файлов после оплаты</li>
+          </ul>
+          <p class="checklist__extra"><b>По отдельной договорённости:</b> подготовка материалов, дополнительные функции, размещение и сопровождение. Полноценное SEO-продвижение в базовую разработку не входит.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ЭТАПЫ ===================== -->
+    <section class="section steps" data-steps>
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-split><span class="line"><span>От вашей идеи до готового сайта — четыре шага</span></span></h2>
+          <p data-reveal>Все вопросы и обратная связь проходят через менеджера. Он ведёт проект от заявки до передачи; разработчик занимается сайтом.</p>
+        </div>
+
+        <ol class="steps__list" role="list">
+          <li class="step" style="--i:0">
+            <span class="step__num">1</span>
+            <h3>Расскажите о задаче</h3>
+            <p>Оставьте короткую заявку. Достаточно телефона и пары слов о вашем бизнесе.</p>
+          </li>
+          <li class="step" style="--i:1">
+            <span class="step__num">2</span>
+            <h3>Согласуем предложение</h3>
+            <p>Менеджер уточнит детали, зафиксирует состав работ, стоимость, предоплату и срок.</p>
+          </li>
+          <li class="step" style="--i:2">
+            <span class="step__num">3</span>
+            <h3>Создадим и покажем</h3>
+            <p>Разработчик соберёт сайт, а менеджер пришлёт ссылку на предварительный результат.</p>
+          </li>
+          <li class="step" style="--i:3">
+            <span class="step__num">4</span>
+            <h3>Внесём правки и передадим</h3>
+            <p>Внесём один согласованный пакет правок. После приёмки и окончательной оплаты передадим файлы сайта.</p>
+          </li>
+        </ol>
+        <div class="steps__track" aria-hidden="true"><i data-steps-bar></i></div>
+      </div>
+    </section>
+
+    <!-- ===================== ОПЛАТА ===================== -->
+    <section class="section pay">
+      <div class="wrap pay__grid">
+        <div>
+          <h2 data-split>
+            <span class="line"><span>Сначала увидите результат.</span></span>
+            <span class="line"><span>Затем завершите оплату</span></span>
+          </h2>
+        </div>
+        <div class="pay__text">
+          <p data-reveal style="--d:0">До разработки согласуем цену, состав работ и предоплату. Дополнительные задачи обсуждаем отдельно.</p>
+          <p data-reveal style="--d:1">После предоплаты и получения материалов начинаем работу. Менеджер покажет готовый сайт по ссылке — вы сможете спокойно его проверить.</p>
+          <p data-reveal style="--d:2">Включён один консолидированный пакет правок в согласованном объёме. Ошибки исполнителя исправляем отдельно от этого пакета. После приёмки и окончательного расчёта передадим файлы и инструкцию запуска.</p>
+        </div>
+        <div class="paybar" data-paybar aria-label="Порядок оплаты">
+          <div class="paybar__seg"><span>Предоплата</span></div>
+          <div class="paybar__seg paybar__seg--look"><span>Смотрите сайт по ссылке</span></div>
+          <div class="paybar__seg"><span>Пакет правок</span></div>
+          <div class="paybar__seg paybar__seg--final"><span>Окончательный расчёт и файлы</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== О СТУДИИ ===================== -->
+    <section class="section about" id="about">
+      <div class="wrap about__grid">
+        <div class="about__copy">
+          <p class="about__kicker" data-reveal>О студии Сайтика</p>
+          <h2 data-split>
+            <span class="line"><span>За вашим сайтом стоит команда,</span></span>
+            <span class="line"><span>а не безликий генератор</span></span>
+          </h2>
+          <p data-reveal>Вы знаете своё дело. Мы помогаем рассказать о нём так, чтобы вас поняли и могли связаться.</p>
+          <p data-reveal>Начинаем с того, что нужно вашему клиенту. Используем современные инструменты, внимательно собираем детали и проверяем результат перед передачей.</p>
+        </div>
+        <div class="about__questions" data-questions>
+          <p class="about__qhead">На сайте должно быть ясно:</p>
+          <p class="q">Что вы предлагаете.</p>
+          <p class="q">Почему вам можно доверять.</p>
+          <p class="q">Как сделать первый шаг.</p>
+          <p class="about__qfoot">Каждый блок помогает ответить на один из этих вопросов.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ВОПРОСЫ ===================== -->
+    <section class="section faq" id="faq">
+      <div class="wrap faq__grid">
+        <div class="faq__side">
+          <h2 data-split><span class="line"><span>Что ещё важно знать</span></span><span class="line"><span>перед заказом?</span></span></h2>
+          <p data-reveal>Не нашли ответ — напишите в заявке, менеджер подскажет.</p>
+          <a class="btn btn--ghost" href="#contacts" data-reveal>Задать вопрос</a>
+        </div>
+        <div class="faq__list">
+          <details class="qa">
+            <summary>Можно ли заказать сайт без технических знаний?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__body"><p>Да. Расскажите менеджеру о своём бизнесе и задаче. Он поможет выбрать формат, объяснит этапы и соберёт необходимые уточнения.</p></div>
+          </details>
+          <details class="qa">
+            <summary>Нужно ли самостоятельно писать тексты?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__body"><p>Можно передать готовые тексты. Если нужна помощь с подготовкой или редактурой, обсудим её объём и стоимость до начала работы.</p></div>
+          </details>
+          <details class="qa">
+            <summary>Что делать, если нет фотографий?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__body"><p>Сообщите об этом менеджеру. Согласуем подбор изображений с правом использования или оформление без фотографий. Объём и возможную доплату обсудим заранее.</p></div>
+          </details>
+          <details class="qa">
+            <summary>Действительно ли сайт будет готов за два дня?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__body"><p>До двух дней — срок стандартного проекта после согласования требований, получения материалов и предоплаты. Дату старта и срок подтверждает менеджер; сложные задачи оцениваем отдельно.</p></div>
+          </details>
+          <details class="qa">
+            <summary>Можно ли изменить готовый дизайн?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__body"><p>Стандартная адаптация шаблона включает замену текстов, изображений и логотипа при сохранении структуры. Переработку дизайна и новые функции рассчитываем отдельно.</p></div>
+          </details>
+          <details class="qa">
+            <summary>Будет ли сайт работать на телефоне?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__body"><p>Да. Адаптируем интерфейс под смартфоны, планшеты и компьютеры. Перед передачей проверим читаемость, навигацию и согласованные функции.</p></div>
+          </details>
+          <details class="qa">
+            <summary>Сколько стоят домен и хостинг?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__body"><p>Их стоимость зависит от выбранного регистратора и тарифа. Домен и хостинг оформляются на вас и оплачиваются отдельно; размещение и настройку согласуем с менеджером.</p></div>
+          </details>
+          <details class="qa">
+            <summary>Появится ли сайт в Яндексе и Google?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__body"><p>Подготовим заголовки, метаданные и техническую основу для индексации. Решение об индексации принимают поисковые системы. SEO-продвижение и позиции в поиске не входят в базовую разработку.</p></div>
+          </details>
+          <details class="qa">
+            <summary>Можно ли самостоятельно изменять сайт?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__body"><p>После оплаты вы получите файлы и инструкцию запуска. Для правок в коде потребуются технические навыки. Если нужно редактирование через панель управления, обсудим это отдельно до разработки.</p></div>
+          </details>
+          <details class="qa">
+            <summary>Кому будет принадлежать сайт после оплаты?<span class="qa__icon" aria-hidden="true"></span></summary>
+            <div class="qa__body"><p>После окончательного расчёта передадим вам согласованные файлы сайта. Условия передачи фиксируем до работы; сторонние шрифты и изображения используются по условиям их лицензий.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ЗАЯВКА ===================== -->
+    <section class="section contact" id="contacts">
+      <div class="wrap contact__grid">
+        <div class="contact__copy">
+          <h2 data-split>
+            <span class="line"><span>Расскажите о своём бизнесе —</span></span>
+            <span class="line"><span>подберём подходящий сайт</span></span>
+          </h2>
+          <p data-reveal>Оставьте телефон. Менеджер уточнит задачу, поможет с форматом и согласует стоимость.</p>
+          <ul class="contact__facts" role="list" data-reveal>
+            <li><b>2 000 ₽</b>готовый шаблон</li>
+            <li><b>10 000 ₽</b>индивидуальный лендинг</li>
+            <li><b>до 2 дней</b>стандартный проект</li>
+          </ul>
+        </div>
+
+        <!--
+          ФОРМА ЗАЯВКИ
+          Данные сейчас никуда не отправляются: assets/js/home.js показывает экран «Заявка отправлена».
+          Для CRM укажите адрес в data-endpoint и допишите запрос в функции sendLead() в home.js.
+          Поле website — ловушка для ботов, у человека оно всегда пустое.
+        -->
+        <form class="lead" id="lead-form" data-lead data-endpoint="" novalidate>
+          <div class="lead__inner">
+            <fieldset class="lead__group">
+              <legend>Какой сайт нужен?</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="route" value="Новый сайт под ключ" data-route-value="new" checked><span>Новый сайт под ключ</span></label>
+                <label class="chip"><input type="radio" name="route" value="Готовый шаблон" data-route-value="template"><span>Готовый шаблон</span></label>
+                <label class="chip"><input type="radio" name="route" value="Пока не знаю, нужна помощь" data-route-value="help"><span>Пока не знаю, нужна помощь</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="lead__group">
+              <legend>Как удобнее связаться?</legend>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="channel" value="Telegram" checked><span>Telegram</span></label>
+                <label class="chip"><input type="radio" name="channel" value="MAX"><span>MAX</span></label>
+                <label class="chip"><input type="radio" name="channel" value="Телефонный звонок"><span>Телефонный звонок</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="lead-phone">Номер телефона <span aria-hidden="true">*</span></label>
+              <input id="lead-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (999) 123-45-67" required aria-describedby="lead-phone-error">
+              <span class="field__error" id="lead-phone-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="lead-comment">Комментарий о проекте <span class="field__opt">необязательно</span></label>
+              <textarea id="lead-comment" name="comment" rows="3" placeholder="Чем занимаетесь и что хотите рассказать клиентам"></textarea>
+            </div>
+
+            <div class="lead__trap" aria-hidden="true">
+              <label for="lead-website">Ваш сайт</label>
+              <input id="lead-website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <label class="check">
+              <input type="checkbox" name="consent" required aria-describedby="lead-consent-error">
+              <span class="check__box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+              <span>Даю согласие на обработку персональных данных. <a href="privacy.html">Политика конфиденциальности</a></span>
+            </label>
+            <span class="field__error" id="lead-consent-error" role="alert"></span>
+
+            <button class="btn btn--signal btn--block lead__submit" type="submit">
+              <span class="lead__submit-text">Отправить заявку</span>
+            </button>
+          </div>
+
+          <div class="lead__done" tabindex="-1" aria-live="polite">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29"/><path d="M19 33l9 9 17-19"/></svg>
+            <h3>Заявка отправлена</h3>
+            <p>Менеджер свяжется с вами в выбранном мессенджере или позвонит.</p>
+            <button class="link" type="button" data-lead-reset>Отправить ещё одну</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== ПОДВАЛ ===================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <p class="footer__slogan">Сайты для небольших дел <span>и больших планов.</span></p>
+        <ul class="footer__links" role="list">
+          <li><a href="catalog.html">Каталог сайтов</a></li>
+          <li><a href="#formats">Услуги студии</a></li>
+          <li><a href="#prices">Цены и условия</a></li>
+          <li><a href="#projects">Портфолио</a></li>
+          <li><a href="#faq">Вопросы и ответы</a></li>
+          <li><a href="privacy.html">Конфиденциальность</a></li>
+        </ul>
+      </div>
+      <div class="footer__word" aria-hidden="true">Сайтика</div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Сайтика</span>
+        <a href="privacy.html#cookie">Использование cookie</a>
+        <button class="to-top" type="button" data-to-top>Наверх
+          <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13V3M3.5 7.5L8 3l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Кнопки снизу на телефоне -->
+  <div class="dock" data-dock>
+    <a class="btn btn--ghost" href="catalog.html">Каталог</a>
+    <a class="btn btn--signal" href="#contacts">Заказать сайт</a>
+  </div>
+
+  <!-- Cookie -->
+  <div class="cookie" data-cookie role="dialog" aria-live="polite" aria-label="Уведомление об использовании cookie" hidden>
+    <p class="cookie__title">Мы используем cookie</p>
+    <p>Они помогают сайту работать и показывают, какие страницы полезны. Продолжая пользоваться сайтом, вы соглашаетесь с <a href="privacy.html#cookie">политикой конфиденциальности</a>.</p>
+    <div class="cookie__row">
+      <button class="btn btn--signal" type="button" data-cookie-accept>Хорошо</button>
+      <a class="btn btn--ghost" href="privacy.html#cookie">Подробнее</a>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/home.js" defer></script>
+</body>
+</html>
