@@ -296,7 +296,7 @@
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     box-shadow: 0 20px 40px -18px rgba(19, 32, 57, 0.7);
-    transform: translateY(160%);
+    transform: translateY(calc(100% + 140px));
     transition: transform 0.6s var(--ease-out), bottom 0.5s var(--ease-out);
   }
   .dock.is-visible { transform: none; }

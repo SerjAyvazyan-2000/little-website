@@ -774,7 +774,7 @@
   backdrop-filter: blur(12px);
   color: var(--white);
   box-shadow: 0 24px 50px -20px rgba(19, 32, 57, 0.8);
-  transform: translate(-50%, 160%);
+  transform: translate(-50%, calc(100% + 140px));
   transition: transform 0.6s var(--ease-out), bottom 0.5s var(--ease-out);
 }
 .buybar.is-visible { transform: translate(-50%, 0); }
