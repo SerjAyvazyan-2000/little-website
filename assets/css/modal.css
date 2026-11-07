@@ -1,0 +1,96 @@
+/* Всплывающая форма заказа */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+.modal[hidden] { display: none; }
+
+.modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(19, 32, 57, 0.55);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transition: opacity 0.4s var(--ease-out);
+}
+
+.modal__panel {
+  position: relative;
+  width: min(600px, 100%);
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: clamp(1.4rem, 4vw, 2.2rem);
+  border-radius: var(--r-l);
+  background: var(--white);
+  box-shadow: 0 40px 100px -30px rgba(19, 32, 57, 0.7);
+  opacity: 0;
+  transform: translateY(40px) scale(0.96);
+  transition: opacity 0.4s var(--ease-out), transform 0.55s var(--ease-out);
+}
+.modal__panel:focus { outline: none; }
+
+.modal.is-open .modal__overlay { opacity: 1; }
+.modal.is-open .modal__panel { opacity: 1; transform: none; }
+
+.modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 14px;
+  background: var(--paper);
+  transition: background-color 0.25s, transform 0.4s var(--ease-out);
+}
+.modal__close svg { width: 18px; height: 18px; fill: none; stroke: var(--ink); stroke-width: 2; stroke-linecap: round; }
+.modal__close:hover { background: var(--signal); transform: rotate(90deg); }
+
+.modal__head { display: grid; gap: 0.6rem; margin-bottom: 1.4rem; padding-right: 3rem; }
+.modal__head h2 { font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.2rem); line-height: 1.1; }
+.modal__head p { color: var(--ink-2); }
+
+/* Форма внутри окна — без своей карточки */
+.modal__form.lead {
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+.modal__form .lead__inner { gap: 1.2rem; }
+
+.modal-open { overflow: hidden; }
+
+/* На телефоне окно выезжает снизу */
+@media (max-width: 640px) {
+  .modal { place-items: end stretch; padding: 0; }
+  .modal__panel {
+    width: 100%;
+    max-height: 92dvh;
+    padding-bottom: calc(1.4rem + env(safe-area-inset-bottom));
+    border-radius: 26px 26px 0 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s, transform 0.55s var(--ease-out);
+  }
+  .modal__panel::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    width: 44px;
+    height: 4px;
+    translate: -50% 0;
+    border-radius: 4px;
+    background: var(--line);
+  }
+}
